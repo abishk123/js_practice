@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        "use strict"
+        let a = this;
+        console.log(a);
+        function main()
+        {
+            let obj1=this;
+            console.log(obj1);
+        }
+        main();
+        let m1=function()
+        {
+            let obj2=this;
+            console.log(obj2);
+        }
+        m1();
+        let m2=()=>
+        {
+            let obj3=this;
+            console.log(obj3);
+        }
+        m2();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

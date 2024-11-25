@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <SCRIPT>
+        let s1={
+            stuid:101,
+            name:'prabhas',
+            birthyear:1998
+        };
+        let s2={
+            stuid:102,
+            name:'raju',
+            birthyear:1995
+        };
+
+        let calcAge=function()
+        {
+            console.log(this);
+            let d1=new Date();
+            let currentYear=d1.getFullYear();
+            let age=currentYear-this.birthYear
+            console.log(`student age is ${age}`)
+        }
+        calcAge.call(s1);
+        calcAge.call(s2);
+
+    </SCRIPT>
+</head>
+<body>
+    
+</body>
+</html>

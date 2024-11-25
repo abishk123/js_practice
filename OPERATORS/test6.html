@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function day()
+        {
+            let d=new Date();
+            let week=d.getDay();
+            if (week==0){
+                console.log('SUNDAY')
+            }
+            else if (week==1){
+                console.log('MONDAY')
+            }
+            else if (week==2){
+                console.log('TUESDAY')
+            }
+            else if (week==3){
+                console.log('WEDNESDAY')
+            }
+            else if (week==4){
+                console.log('THURSDAY')
+            }
+            else if (week==5){
+                console.log('FRIDAY')
+            }
+            else if (week==6){
+                console.log('SATURDAY')
+            }
+            else {
+                console.log('INVALID DAY')
+            }
+        }
+        day();
+        function main()
+        {
+            let d1=new Date()
+            let dayy=d1.getDay()
+            let str='TRANSACTION HAPPENED ON '
+            if (dayy==0) str+= "SUNDAY"
+            else if (dayy==1) str+= "MONDAY"
+            else if (dayy==2) str+= "TUESDAY"
+            else if (dayy==3) str+= "WEDNESDAY"
+            else if (dayy==4) str+= "THURSDAY"
+            else if (dayy==5) str+= "FRIDAY"
+            else if (dayy==6) str+= "SATURDAY"
+            else console.log("invalid input")
+
+            console.log(str);
+            
+        }
+        main();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

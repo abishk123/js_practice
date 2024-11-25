@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>cls creation</title>
+    <script>
+        //class declaration
+        class A
+        {
+            static main()
+            {
+                console.log("main is executing\nIt is a static method");
+            }
+            m1()
+            {
+                console.log("m1 is executing\nIt is a non static method");
+            }
+        }
+        A.main();   //static method call
+        let a=new A();
+        a.m1();     //non-static method call
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

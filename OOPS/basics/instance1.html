@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+
+        function Teacher()
+        {
+            console.log(this)
+        }
+        s4=Teacher()
+
+
+        function Student(sid,sname,birthYear)
+        {
+            this.sid=sid;
+            this.sname=sname;
+            this.birthYear=birthYear;
+        }
+        let s1=new Student(101,"kiran",1998);
+        console.log(s1);
+        let s2=new Student(102,"kiran",1998);
+        console.log(s2);
+        let s3=new Student(103,"kiran",1998);
+        console.log(s3);
+
+        console.log(s1 instanceof Student);
+        console.log(s2 instanceof Student);
+        console.log(s3 instanceof Teacher);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

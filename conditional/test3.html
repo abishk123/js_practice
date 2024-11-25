@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function main()
+        {
+            for (let i=1;i<=5;i++)
+            {
+                console.log("msg")
+            }
+        }
+        //main()
+        //
+        function main1()
+        {
+            str=""
+            for (let i=1;i<=5;i++)
+            {
+                if(i<5)str+=i+','
+                else str+=i
+            }
+            console.log(str)
+        }
+        //main1()
+        //wap to find factors of a given number
+        function factors()
+        {
+            let n=Number(prompt("n: "))
+            for (let i=1;i<=n;i++)
+            {
+                if (n%i==0) console.log(i);
+            }
+        }
+        //factors();
+        //wap to count the factors of given number
+        function count()
+        {
+            let c =0;
+            let n=Number(prompt("n: "))
+            for (let i=1;i<=n;i++)
+            {
+                if (n%i==0) c++
+            }
+            console.log(c);
+        }
+        //count();
+        //wap to print the given number is prime or not
+        function prime()
+        {
+            num=Number(prompt("number: "))
+            let c=0;
+            for (let i=2;i<Math.trunc(num/2);i++)
+            {
+                if (num%i==0)
+                {
+                    c++
+                    console.log("not prime");
+                    break;
+                }
+                else console.log('prime');
+            }
+        }
+        prime();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

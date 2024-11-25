@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>js object oriented</title>
+    <script>
+        //prototype will reduce code redundancy
+        function Student(sid,sname,birthYear)
+        {
+            this.sid=sid
+            this.sname=sname
+            this.birthYear=birthYear
+        }
+
+        Student.prototype.calcAge=function()
+        {
+            let d1=new Date();
+            let currYear=d1.getFullYear();
+            console.log("current year is = "+currYear)
+            let age=currYear-this.birthYear;
+            console.log("age = "+age);
+        }
+        Student.prototype.city='Bangalore';
+
+        let s1=new Student(101,'kiran',1997);
+        console.log(s1.city);
+        s1.calcAge();
+        let s2=new Student(102,"kiran",1998);
+        s2.calcAge();
+        let s3=new Student(103,"kiran",1998);
+        s3.calcAge();
+
+        let e1={id:101,eanme:'pranay'}
+        console.log(e1)
+        console.log(e1.hasOwnProperty('ename'));
+        console.log(Student.prototype==s1.__proto__)
+        console.log(Student.prototype==s2.__proto__)
+        console.log(Object.prototype)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

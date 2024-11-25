@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        let t1={
+            travelsId:101,
+            travelsName:"vrl",
+            bookings:[]
+        }
+
+        let book=function(pName,seatno)
+        {
+            console.log(`${pName} booked seat in ${this.travelsName} travels with seatno ${seatno}`);
+
+        };
+        book.call(t1,"abc",23);//call method
+        let a=["xyz",27];
+        book.apply(t1,a);//apply method
+        let b=book.bind(t1,);//BIND METHOD
+        b("akr",34);
+        b("pqr",44);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

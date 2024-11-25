@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        main();
+        function main()
+        {
+            console.log("main starts")
+            let a = m1();
+            console.log("a value is "+ a);
+            console.log("main ends")
+            return;
+        }
+        function m1()
+        {
+        let summ=1+2;
+        let product=summ*4
+        return summ;
+        return product;//UNREACHABLE STATEMENT
+        }
+
+        function main2()
+        {
+            let a=4;
+            if (a%2==0)
+            {
+                console.log(a);
+                return
+            }
+            console.log(a);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        main();
+        function main()
+        {
+            calc(10,12,mul);
+        }
+        function calc(a,b,type)
+        {
+            let res=type(a,b);
+            return res;
+        }
+
+        function add(a,b)
+        {
+            console.log(a+b)
+        }
+        function sub(a,b)
+        {
+            console.log(a-b)
+        }
+        function mul(a,b)
+        {
+            console.log(a*b)
+        }
+
+        //REST OPERATOR
+
+        main2();
+        function main2()
+        {
+            summ(11,22)
+            summ(1.2,33)
+            summ(11,22,"jsp",33,44)
+        }
+        //example of function overloading
+        function summ(...arr)
+        {
+            let sum=0;
+            for (let i=0;i<arr.length;i++)
+            {
+                sum+=arr[i]
+            }
+            console.log(sum);
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

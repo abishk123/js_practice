@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        main();
+        function main()
+        {
+            console.log("main starts")
+            m1();
+            console.log("main ends")
+            return;
+        }
+        function m1()
+        {
+        console.log("m1 starts");
+        console.log("m1 ends");
+        return;
+        }
+        //WHEN A FUNCTION IS NOT RETURNING ANY VALUE EXPLICITLY, THEN JS WILL RETURNS DEFAULT VALUE BY IMPLICITLY.
+        main1();
+        function main1()
+        {
+            console.log("main starts")
+            let a=m11();
+            console.log("a value is "+a);
+            console.log("main ends")
+            return;
+        }
+        function m11()
+        {
+        console.log("m1 starts");
+        console.log("m1 ends");
+        return;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

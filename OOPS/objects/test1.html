@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        let student={
+            stuId:"JSP101",
+            firstName:"PRABHAS",
+            lastName:"RAJU",
+            age:24,
+            birthYear:2000
+        };
+        console.log(student);//object
+        //accessing object props using . notation    (objref.propName)
+        let stuName=student.firstName;
+        stuAge=student.age;
+
+        console.log(`student name is ${stuName} & student age is ${stuAge}`);
+        //accessing object props using [] notation   (objref["propName"])
+        stuName=student["firstName"];
+        stuAge=student["age"];
+
+        console.log(`student name is ${stuName} & student age is ${stuAge}`);
+
+        //note
+        //1.if we try to access non existing properties from an object then js returns undefined
+        //accessing non existing properties
+        console.log(student.address);//undefined
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
